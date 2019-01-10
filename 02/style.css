@@ -1,0 +1,77 @@
+body {
+	margin: 0px;
+	margin-bottom: 8px;
+	background: url(images/cafe-bg.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+.header {
+	width: 100%;
+	height: 16vw;
+	background: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 6vw;
+	font-weight: bold;
+}
+
+.cupImg {
+    width: 100%;
+    height: 16vw;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+.tmblrCupImg {
+	width: 100%;
+    height: 16vw;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+.first {
+    width: 90%;
+    height: 16vw;
+    border: 1vw solid white;
+	outline: none;
+	margin: 0 auto;
+	font-size: 6vw;
+	color: white;
+	background-color: transparent;
+}
+
+
+.second{
+    width: 90%;
+    height: 16vw;
+    border: 1vw solid white;
+	outline: none;
+	margin: 0 auto;
+	font-size: 6vw;
+	color: white;
+	background-color: transparent;
+}
+
+.btn1 {
+	width: 100%;
+	height: 16vw;
+	display: flex;
+	margin-top: 15%;
+}
+
+.btn2 {
+	width: 100%;
+	height: 16vw;
+	display: flex;
+	margin-top: 15%;
+	margin-bottom: 5%;
+}
