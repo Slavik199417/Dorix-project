@@ -98,6 +98,33 @@ a:visited {
 	display: block;
 }
 
+.description1 {
+	width: 28vw;
+	height: 15vw;
+	border: 0.5vw solid red;
+	font-weight: bold;
+	font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4vw;
+    text-align: right;
+}
+
+.img1 {
+	width: 12vw;
+	height: 15vw;
+	border: 0.5vw solid blue;
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mid-slide1 .img1 img {
+    width: 100%;
+    height: auto;
+}
+
 .mid-slide1{
   width: 62vw;
   height: 17vw;
@@ -108,7 +135,7 @@ a:visited {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;\
+  justify-content: flex-end;
 }
 
 
@@ -223,7 +250,7 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 2vw;
+    padding-right: 4vw;
     text-align: right;
 }
 
@@ -456,4 +483,16 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.step1coffe:target {
+	display: block;
+}
+
+.step1coffe {
+	width: 63vw;
+    height: 78vw;
+    background-color: lightblue;
+    overflow-y: auto;
+    display: none;
 }
