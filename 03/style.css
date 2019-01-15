@@ -36,9 +36,6 @@ body {
   border: 0.5vw solid gray;
   border-radius: 2vw;
   text-align: center;
-/*  display: flex;
-  align-items: center;
-  justify-content: center;*/
 }
 
 .slide:not(:first-child) {
@@ -91,7 +88,6 @@ a:visited {
     top: 17vw;
     left: 6vw;
     display: none;
-    z-index: 2;
 }
 
 .mid-slider-w:target {
@@ -279,6 +275,11 @@ a:visited {
 	height: auto;
 }
 
+.subsubSlide .img img {
+	width: 100%;
+	height: auto;
+}
+
 .yorder {
 	position: absolute;
 	top: 125vw;
@@ -393,18 +394,66 @@ a:visited {
 	justify-content: center;
 }
 
-
-.exp {
-    width: 620px;
-    height: 600px;
-    background-color: green;
+.subsubGroup7 {
+    overflow-y: auto;
+    width: 63vw;
+    height: 105vw;
     position: absolute;
-    top: 306px;
-    left: 78px;
+    top: 17vw;
+    left: 6vw;
     display: none;
 }
 
-.exp:target {
+.subsubGroup7:target {
 	display: block;
 }
 
+.groupImg1,
+.groupImg2,
+.groupImg3 {
+    width: 63vw;
+    height: 27vw;
+    text-align: center; 
+}
+
+.groupImg1 img {
+	width: 60%;
+	height: auto;
+}
+
+.groupImg2 img {
+	width: 46%;
+	height: auto;
+}
+
+.groupImg3 img {
+	width: 34%;
+	height: auto;
+}
+
+.subgroup-name {
+	font-weight: bold;
+    font-size: 5vw;
+}
+
+
+
+.subsubSlider {
+	width: 63vw;
+    height: 78vw;
+    background-color: lightblue;
+    overflow-y: auto;
+}
+
+.subsubSlide {
+  width: 62vw;
+  height: 14vw;
+  flex-shrink: 0;
+  scroll-behavior: smooth;
+  border: 0.5vw solid gray;
+  border-radius: 2vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
