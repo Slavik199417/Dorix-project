@@ -124,10 +124,11 @@
       	<div class="choice2">
            <button class="option">חלב בצד  </button>
            <button class="option">נטול קפאין </button>
-           <button class="option">חלב קר  </button>
-           <button class="option">חלב חם  </button>
       	</div>
-
+        <div class="choice2-2">
+        	<button class="option">חלב קר  </button>
+           <button class="option">חלב חם  </button>
+        </div>
       	<div class="question3">פוג חלב  </div>
       	<div class="choice3">
            <button class="option">דל שומן </button>
@@ -324,7 +325,7 @@
       	  <div class="description">ביצי עין על לחם קלןי </div>
       	  <div class="img"><img src="images/items/set4.PNG"></div>
       	</div>
-      	<div class="mid-slide5">
+      	<div id="btnShak" class="mid-slide5">
       	  <div class="price">₪33</div>
       	  <div class="description">שקשוקה  </div>
       	  <div class="img"><img src="images/items/set5.PNG"></div>
@@ -557,7 +558,7 @@
       	        <div class="description">בים חלומי </div>
       	        <div class="img"><img src="images/items/gamburger2.PNG"></div>
       	  	</div>
-      	  	<div class="subsubSlide">
+      	  	<div id="myBtn" class="subsubSlide">
       	  		<div class="price">₪12</div>
       	        <div class="description">בים טונה  </div>
       	        <div class="img"><img src="images/items/gamburger3.PNG"></div>
@@ -590,14 +591,43 @@
       	  </div>
       </div>
 
-
-
-      <div id="myModal" class="modal">
-      	<div></div>
-      	<div></div>
+    
+    <div id="myPopUp" class="popUp">
+      <div class="popUp-content">
+        <div class="popUpName">בים טונה  </div>
+        <div class="popUpDescription">
+        	לחמניית בים מקמח מלא, רוטב ארומה, טונה, עגבניה, <br>
+        	מלפפון חמוץ, רוקט  
+        </div>
+        <div class="popUpMid">
+        	<div class="popUpPrice">₪12</div>
+        	<div class="popUpImg"><img src="images/items/gamburger3.PNG">       
+        	</div>
+        </div>
+        <div class="btnDiv">
+        	<a href="../04/index.html"><button class="popUpBtn">התאמה אישית  </button></a>
+        	<button class="popUpBtn">הוסף להזמנה  </button>
+        </div>
       </div>
+    </div>
 
-
+    <div id="shakshukaPopUp" class="popUp">
+      <div class="popUp-content">
+        <div class="popUpName">שקשוקה  </div>
+        <div class="popUpDescription">
+      
+        </div>
+        <div class="popUpMid">
+         <div class="popUpPrice"></div>
+         <div class="popUpImg">       
+         </div>
+        </div>
+        <div class="btnDiv">
+         <button class="popUpBtn"></button>
+         <button class="popUpBtn"> </button>
+        </div>
+      </div>
+    </div>
  
 
 </div>
@@ -610,9 +640,41 @@
      	<div class="low-slide">3</div> -->
       </div>
 
+    
+
+
 
  <script>
+// Get the modal
+var popUp = document.getElementById('myPopUp');
 
+// Get the div that opens the modal
+var btn = document.getElementById("myBtn");
+
+// When the user clicks, open the pop up 
+btn.onclick = function() {
+  popUp.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the pop up, close it
+window.onclick = function(event) {
+  if (event.target == popUp) {
+    popUp.style.display = "none";
+  }
+}
+
+
+
+var shakPopUp = document.getElementById('shakshukaPopUp');
+var btn = document.getElementById("btnShak");
+btn.onclick = function() {
+  shakPopUp.style.display = "block";
+}
+window.onclick = function(event) {
+  if (event.target == shakPopUp) {
+    shakPopUp.style.display = "none";
+  }
+}
  </script>     
 </body>
 
