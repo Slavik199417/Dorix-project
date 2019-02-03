@@ -1,0 +1,139 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	height: 100%;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw;
+    font-weight: bold;
+}
+
+.red {
+	color: red;
+}
+
+.stepBack {
+  font-size: 6vw;
+  width: 5vw;
+  position: absolute;
+  top: 3%;
+  left: 90%;
+}
+
+.wrapper {
+	width: 100%;
+	height: 73vh;
+}
+
+.enterName {
+	width: 80%;
+	height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3vh;
+	font-weight: bold;
+	margin: 5vh auto;
+}
+
+.text {
+	width: 80%;
+	height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3vh;
+	font-weight: bold;
+	margin: 5vh auto;
+}
+
+
+.keyboard{
+    width: 100%;
+    height: 42vh;
+    background-color: #dce0e3;
+    padding: 1vh;
+}
+.keyboard .row{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.keyboard .key{
+	width: 5vh;
+    height: 7vh;
+    border-radius: 1vh;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: #fff;
+}
+.keyboard .key:hover{
+    background: #f9de53;
+}
+.keyboard .backspace,.keyboard .shift,.keyboard .capslock{
+    width: 100px;
+}
+.keyboard .capslock,.keyboard .shift{
+color: #4e2f2f;
+}
+
+.keyboard .space{
+    width: 300px;
+}
+
+#result{
+    width: 60%;
+    height: 4vh;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+    color: #444;
+}
+
+
+
+
+
+
+
+
+
+.btnDiv {
+	width: 100%;
+	height: 11vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btnDiv button {
+	width: 90%;
+	height: 10vh;
+	background-color: black;
+	border-color: black;
+	color: white;
+	outline: none;
+	font-size: 4vh;
+    font-weight: bold;
+}

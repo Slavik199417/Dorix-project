@@ -30,6 +30,14 @@ body {
 	color: red;
 }
 
+.stepBack {
+  font-size: 6vw;
+  width: 5vw;
+  position: absolute;
+  top: 3%;
+  left: 90%;
+}
+
 .image-div {
 	width: 90%;
 	height: 70%;

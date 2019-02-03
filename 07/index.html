@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document7</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<span class="red">אספךסז בך  &nbsp;</span>אךזמה   
+		<a onclick="javascript:history.back(); return false;"><div class="stepBack"> > </div></a>
+	</div>
+
+        <div class="mainDiv">
+			<div id="btn1" class="green">1</div>
+			<div id="btn2" class="green">2</div>
+			<div id="btn3" class="green">3</div>
+			<div id="btn4" class="green">4</div>
+			<div id="btn5" class="green">5</div>
+		</div>
+
+	<div class="wrapper">
+		<div class="creditCard">
+			<div class="name">אשראי </div>
+			<div class="img"><img src="images/credit.PNG"></div>
+		</div>
+		<div class="dinerCards">
+			<div class="name">כרטיסי סועד  </div>
+			<div class="img"><img src="images/dinner.PNG"></div>
+		</div>
+		<div class="aromaCard">
+			<div class="name">ארומה קארד  </div>
+			<div class="img"><img src="images/aroma.PNG"></div>
+		</div>
+	</div>
+
+<!--  FIRST POPUP    --> 
+     <div id="first" class="popUp">
+     	<div class="low-popUp">
+     		<div id="can1" class="can1">x</div>...תודה ובתיאבון 
+     	</div>
+     </div>
+
+<!--  SECOND POPUP -->
+     <div id="second" class="popUp">
+     	<div class="second-popUp"><div id="can2" class="can2">x</div>
+     	   <div class="top2">תשלום באשראי  </div>
+     	   <div class="mid2">נא להעביר כרטיס אשראי  </div>
+     	   <div class="low2">
+     	   	  <button>ביטול  </button>
+     	   </div>
+     	</div>
+     	<div class="box"></div>
+     	<div class="box"></div>
+     	<div class="box"></div>
+     	<div class="arrow"></div>
+     </div>
+
+<!-- THIRD POPUP -->
+     <div id="third" class="popUp">
+     	<div class="third-popUp"><div id="can3" class="can3">x</div>
+     	   <div class="top3">נא להעביר כרטיס  </div>
+     	   <div class="low3">
+     	   	  <button>ביטול  </button>
+     	   </div>
+     	</div>
+     	<div class="box"></div>
+     	<div class="box"></div>
+     	<div class="box"></div>
+     	<div class="arrow"></div>
+     </div>
+
+<!-- FOURTH POPUP -->
+     <div id="fourth" class="popUp">
+     	<div class="fourth-popUp"><div id="can4" class="can4">x</div>
+     	   <div class="top4">אין מספיק יתרה בכרטיס  </div>
+     	   <div class="low4">
+     	   	  <button>אישור  </button>
+     	   </div>
+     	</div>
+     </div>
+
+<!-- FIFTH POPUP -->
+     <div id="fifth" class="popUp">
+     	<div class="fifth-popUp"><div id="can5" class="can5">x</div>
+     	   <div class="top5">כרטיס לא תקין  </div>
+     	   <div class="low5">
+     	   	  <button>אישור  </button>
+     	   </div>
+     	</div>
+     </div>
+
+
+<script>
+// Get the popUp
+var popUp = document.getElementById('first');
+// Get the div that opens the popUp
+var btn1 = document.getElementById("btn1");
+// When the user clicks, open the pop up 
+btn1.onclick = function() {
+  popUp.style.display = "block";
+}
+var can1 = document.getElementById('can1');
+can1.onclick = function() {
+  popUp.style.display = "none";
+}
+
+
+
+
+
+var popUp2 = document.getElementById('second');
+var btn2 = document.getElementById("btn2");
+btn2.onclick = function() {
+  popUp2.style.display = "block";
+}
+var can2 = document.getElementById('can2');
+can2.onclick = function() {
+  popUp2.style.display = "none";
+}
+
+
+
+
+
+var popUp3 = document.getElementById('third');
+var btn3 = document.getElementById("btn3");
+btn3.onclick = function() {
+  popUp3.style.display = "block";
+}
+var can3 = document.getElementById('can3');
+can3.onclick = function() {
+  popUp3.style.display = "none";
+}
+
+
+
+
+
+var popUp4 = document.getElementById('fourth');
+var btn4 = document.getElementById("btn4");
+btn4.onclick = function() {
+  popUp4.style.display = "block";
+}
+var can4 = document.getElementById('can4');
+can4.onclick = function() {
+  popUp4.style.display = "none";
+}
+
+
+
+
+
+var popUp5 = document.getElementById('fifth');
+var btn5 = document.getElementById("btn5");
+btn5.onclick = function() {
+  popUp5.style.display = "block";
+}
+var can5 = document.getElementById('can5');
+can5.onclick = function() {
+  popUp5.style.display = "none";
+}
+</script>
+</body>
+</html>

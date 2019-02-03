@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document8</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<span class="red">אספךסז בך  &nbsp;</span>אךזמה   
+		<a onclick="javascript:history.back(); return false;"><div class="stepBack"> > </div></a>
+	</div>
+	<div class="wrapper">
+		<div id="btn1" class="card"><img src="images/redbox.PNG"></div>
+		<div id="btn2" class="card"><img src="images/cibus.PNG"></div>
+		<div id="btn3" class="card"><img src="images/goodi.PNG"></div>
+	</div>
+
+	 <div id="third" class="popUp">
+     	<div class="third-popUp"><div id="can3" class="can3">x</div>
+     	   <div class="top3">נא להעביר כרטיס  </div>
+     	   <div class="low3">
+     	   	  <button>ביטול  </button>
+     	   </div>
+     	</div>
+     	<div class="box"></div>
+     	<div class="box"></div>
+     	<div class="box"></div>
+     	<div class="arrow"></div>
+     </div>
+
+     <div id="first" class="popUp">
+     	<div class="low-popUp">
+     		<div id="can1" class="can1">x</div>...תודה ובתיאבון 
+     	</div>
+     </div>
+
+
+     <div id="btn" class="green"></div>
+
+<script>
+var popUp3 = document.getElementById('third');
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+btn1.onclick = function() {
+  popUp3.style.display = "block";
+}
+btn2.onclick = function() {
+  popUp3.style.display = "block";
+}
+btn3.onclick = function() {
+  popUp3.style.display = "block";
+}
+var can3 = document.getElementById('can3');
+can3.onclick = function() {
+  popUp3.style.display = "none";
+}
+
+
+
+
+var popUp = document.getElementById('first');
+var btn = document.getElementById("btn");
+btn.onclick = function() {
+  popUp.style.display = "block";
+}
+var can1 = document.getElementById('can1');
+can1.onclick = function() {
+  popUp.style.display = "none";
+}
+
+
+</script>
+</body>
+</html>
