@@ -20,14 +20,27 @@
     <div class="text">נקרא בשמך כשהזמנתך תהיה מוכנה  </div>
 
 	<div class="keyboard">
+
+		<div class="row">
+			<div class="key"><span>1</span></div>
+			<div class="key"><span>2</span></div>
+			<div class="key"><span>3</span></div>
+			<div class="key"><span>4</span></div>
+			<div class="key"><span>5</span></div>
+			<div class="key"><span>6</span></div>
+			<div class="key"><span>7</span></div>
+			<div class="key"><span>8</span></div>
+			<div class="key"><span>9</span></div>
+			<div class="key"><span>0</span></div>
+		</div>
 	
 		<div class="row">
 			<div class="key"><span>ק</span></div>
 			<div class="key"><span>ר</span></div>
 			<div class="key"><span>א</span></div>
 			<div class="key"><span>ט</span></div>
-			<div class="key"><span> ו</span></div>
-			<div class="key"><span> ן</span></div>
+			<div class="key"><span>ו</span></div>
+			<div class="key"><span>ן</span></div>
 			<div class="key"><span>ם</span></div>
 			<div class="key"><span>פ</span></div>			
 			<div class="key backspace"><span>⌫</span></div>
@@ -59,12 +72,9 @@
 		</div>
 		
 		<div class="row">
-			<div class="key"><span></span></div>
-			<div class="key"><span></span></div>
+			<div class="key"><span>,</span></div>
 			<div class="key space"></div>
-			<div class="key"><span>.</span></div>
-			<div class="key"><span></span></div>
-			
+			<div class="key"><span>.</span></div>			
 		</div>
 
 		
@@ -75,6 +85,7 @@
 	<div class="btnDiv">
 		<button>עבור לתשלום  </button>
 	</div>	
+	
 <script src="jquery-1.6.1.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -87,46 +98,18 @@ $(document).ready(function(){
 	
 		key = $(this).find('span').text();
 
-		//Если специальная функция
-		if( key == '⌫' || key == 'Tab' || key == 'Caps Lock' || key == 'Shift' || key == '' ){
+		if( key == '⌫' ||  key == '' ){
 		
 			if( key == '⌫' ){
 				$('#result').val( $('#result').val().substr(0, $('#result').val().length - 1) ).focus();
 			}
-			
-			if( key == 'Tab' ){
-				$('#result').val( $('#result').val() + '       ' ).focus();
-			}
-			
-			if( key == 'Caps Lock' ){
-			
-				if(capslock){
-					$('.capslock').css('color','#929292');
-					capslock = false;
-				}else{
-					$('.capslock').css('color','#ffffff');
-					capslock = true;
-				}	
-			}
-			
-			if( key == 'Shift' ){
-				
-				if(shift){
-					$('.shift').css('color','#929292');
-					shift = false;
-				}else{
-					$('.shift').css('color','#ffffff');
-					shift = true;
-				}	
-			}
+
 		
 			if( key == '' ){
 				$('#result').val( $('#result').val() + ' ' ).focus();
 			}
 			
 		}else{
-			if(capslock) key = key.toUpperCase();		
-			if(shift) key = $(this).find('sup').text();	
 			$('#result').val( $('#result').val() + key ).focus(); 
 		}	
 	});

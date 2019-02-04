@@ -48,7 +48,7 @@ body {
 	align-items: center;
 	font-size: 3vh;
 	font-weight: bold;
-	margin: 5vh auto;
+	margin: 2vh auto;
 }
 
 .text {
@@ -59,24 +59,32 @@ body {
 	align-items: center;
 	font-size: 3vh;
 	font-weight: bold;
-	margin: 5vh auto;
+	margin: 2vh auto;
 }
 
 
 .keyboard{
     width: 100%;
-    height: 42vh;
+    height: 47vh;
     background-color: #dce0e3;
-    padding: 1vh;
+    font-family: arial;
+    padding-top: 1vh;
 }
-.keyboard .row{
+.row{
     width: 100%;
-    height: 10vh;
+    height: 8vh;
+    margin-top: 1vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.keyboard .key{
-	width: 5vh;
+
+.key:first-child {
+    margin-left: 0vw;
+}
+
+.key{
+	width: 7vw;
     height: 7vh;
     border-radius: 1vh;
     margin-left: 2vw;
@@ -88,18 +96,14 @@ body {
     line-height: 40px;
     background-color: #fff;
 }
-.keyboard .key:hover{
-    background: #f9de53;
-}
-.keyboard .backspace,.keyboard .shift,.keyboard .capslock{
-    width: 100px;
-}
-.keyboard .capslock,.keyboard .shift{
-color: #4e2f2f;
+
+.backspace {
+    width: 10vw;
+    background-color: #c2c5ca;
 }
 
 .keyboard .space{
-    width: 300px;
+    width: 50vw;
 }
 
 #result{
@@ -107,8 +111,9 @@ color: #4e2f2f;
     height: 4vh;
     margin: 0 auto;
     display: block;
-    font-size: 18px;
+    font-size: 3vh;
     color: #444;
+
 }
 
 
