@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document6</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 	<div class="header">
@@ -15,13 +15,13 @@
 
     <div class="enterName">אנא הזינו שם מלא  </div>
 
-       <input dir="rtl" id="result" autofocus>
+    <input  id="result" class="keyboardInput" autofocus>
 
-    <div class="text">נקרא בשמך כשהזמנתך תהיה מוכנה  </div>
+    <div class="text"> (: נקרא בשמך כשהזמנתך תהיה מוכנה  </div>
 
 	<div class="keyboard">
-
-		<div class="row">
+        <div id="hebrew" class="hebrew">
+<!-- 		<div class="row">
 			<div class="key"><span>1</span></div>
 			<div class="key"><span>2</span></div>
 			<div class="key"><span>3</span></div>
@@ -32,8 +32,7 @@
 			<div class="key"><span>8</span></div>
 			<div class="key"><span>9</span></div>
 			<div class="key"><span>0</span></div>
-		</div>
-	
+		</div> -->	
 		<div class="row">
 			<div class="key"><span>ק</span></div>
 			<div class="key"><span>ר</span></div>
@@ -43,9 +42,7 @@
 			<div class="key"><span>ן</span></div>
 			<div class="key"><span>ם</span></div>
 			<div class="key"><span>פ</span></div>			
-			<div class="key backspace"><span>⌫</span></div>
-		</div>
-		
+		</div>		
 		<div class="row">
 			<div class="key"><span>ש</span></div>
 			<div class="key"><span>ד</span></div>
@@ -57,8 +54,7 @@
 			<div class="key"><span>ל</span></div>
 			<div class="key"><span>ך</span></div>
 			<div class="key"><span>ף</span></div>
-		</div>
-		
+		</div>		
 		<div class="row">
 			<div class="key"><span> ז</span></div>
 			<div class="key"><span>ס</span></div>
@@ -69,17 +65,144 @@
 			<div class="key"><span>צ</span></div>
 			<div class="key"><span>ת</span></div>
 			<div class="key"><span>ץ</span></div>
-		</div>
-		
+			<div class="key backspace"><span>⌫</span></div>
+		</div>		
 		<div class="row">
-			<div class="key"><span>,</span></div>
+			<div class="key"><span>-</span></div>
+			<div class="key lang"><span></span></div>
 			<div class="key space"></div>
+			<div class="key"><span>,</span></div>
 			<div class="key"><span>.</span></div>			
 		</div>
+		</div>
 
-		
+
+
+		<div id="arabic" class="arabic">
+<!-- 		<div class="row">
+			<div class="key"><span>1</span></div>
+			<div class="key"><span>2</span></div>
+			<div class="key"><span>3</span></div>
+			<div class="key"><span>4</span></div>
+			<div class="key"><span>5</span></div>
+			<div class="key"><span>6</span></div>
+			<div class="key"><span>7</span></div>
+			<div class="key"><span>8</span></div>
+			<div class="key"><span>9</span></div>
+			<div class="key"><span>0</span></div>
+		</div> -->	
+		<div class="row">
+			<div class="key"><span>ض</span></div>
+			<div class="key"><span>ص</span></div>
+			<div class="key"><span>ث</span></div>
+			<div class="key"><span>ق</span></div>
+			<div class="key"><span>ف</span></div>
+			<div class="key"><span>غ</span></div>
+			<div class="key"><span>ع</span></div>
+			<div class="key"><span>ه</span></div>	
+			<div class="key"><span>خ</span></div>
+			<div class="key"><span>ح</span></div>
+			<div class="key"><span>ج</span></div>		
+		</div>		
+		<div class="row">
+			<div class="key"><span>ش</span></div>
+			<div class="key"><span>س</span></div>
+			<div class="key"><span>ي</span></div>
+			<div class="key"><span>ب</span></div>
+			<div class="key"><span>ل</span></div>
+			<div class="key"><span>ا</span></div>
+			<div class="key"><span>ت</span></div>
+			<div class="key"><span>ن</span></div>
+			<div class="key"><span>م</span></div>
+			<div class="key"><span>ك</span></div>
+			<div class="key"><span>ط</span></div>
+		</div>		
+		<div class="row">
+			<div class="key"><span>ذ</span></div>
+			<div class="key"><span>ء</span></div>
+			<div class="key"><span>ؤ</span></div>
+			<div class="key"><span>ر</span></div>
+			<div class="key"><span>ى</span></div>
+			<div class="key"><span>ة</span></div>
+			<div class="key"><span>و</span></div>
+			<div class="key"><span>ز</span></div>
+			<div class="key"><span>ظ</span></div>
+			<div class="key"><span>د</span></div>
+			<div class="key backspace"><span>⌫</span></div>
+		</div>		
+		<div class="row">
+			<div class="key"><span>-</span></div>
+			<div class="key lang"><span></span></div>
+			<div class="key space"></div>
+			<div class="key"><span>,</span></div>
+			<div class="key"><span>.</span></div>			
+		</div>
+		</div>
+
+
+
+		<div id="english" class="english">
+<!-- 		<div class="row">
+			<div class="key"><span>1</span></div>
+			<div class="key"><span>2</span></div>
+			<div class="key"><span>3</span></div>
+			<div class="key"><span>4</span></div>
+			<div class="key"><span>5</span></div>
+			<div class="key"><span>6</span></div>
+			<div class="key"><span>7</span></div>
+			<div class="key"><span>8</span></div>
+			<div class="key"><span>9</span></div>
+			<div class="key"><span>0</span></div>
+		</div>	 -->
+		<div class="row">
+			<div class="key"><span class="downCase">q</span></div>
+			<div class="key"><span class="downCase">w</span></div>
+			<div class="key"><span class="downCase">e</span></div>
+			<div class="key"><span class="downCase">r</span></div>
+			<div class="key"><span class="downCase">t</span></div>
+			<div class="key"><span class="downCase">y</span></div>
+			<div class="key"><span class="downCase">u</span></div>
+			<div class="key"><span class="downCase">i</span></div>	
+			<div class="key"><span class="downCase">o</span></div>
+			<div class="key"><span class="downCase">p</span></div>		
+		</div>		
+		<div class="row">			
+			<div class="key"><span class="downCase">a</span></div>
+			<div class="key"><span class="downCase">s</span></div>
+			<div class="key"><span class="downCase">d</span></div>
+			<div class="key"><span class="downCase">f</span></div>
+			<div class="key"><span class="downCase">g</span></div>
+			<div class="key"><span class="downCase">h</span></div>
+			<div class="key"><span class="downCase">j</span></div>
+			<div class="key"><span class="downCase">k</span></div>
+			<div class="key"><span class="downCase">l</span></div>
+		</div>		
+		<div class="row">
+			<div id="capsBtn" class="key capslock"><span>Caps Lock</span></div>
+			<div class="key"><span class="downCase">z</span></div>
+			<div class="key"><span class="downCase">x</span></div>
+			<div class="key"><span class="downCase">c</span></div>
+			<div class="key"><span class="downCase">v</span></div>
+			<div class="key"><span class="downCase">b</span></div>
+			<div class="key"><span class="downCase">n</span></div>
+			<div class="key"><span class="downCase">m</span></div>
+			<div class="key backspace"><span>⌫</span></div>
+		</div>		
+		<div class="row">
+			<div class="key"><span>-</span></div>
+			<div class="key lang"><span></span></div>
+			<div class="key space"></div>
+			<div class="key"><span>,</span></div>
+			<div class="key"><span>.</span></div>			
+		</div>
+		</div>
 	</div>
-	</div>
+	<div class="language">
+		<button id="hebrewBtn">עברית  </button>
+		<button id="arabicBtn">العربية  </button>
+		<button id="englishBtn">English</button>
+	</div>		
+</div>
 
 
 	<div class="btnDiv">
@@ -91,29 +214,96 @@
 $(document).ready(function(){
 	
 	var capslock = false;
-	var shift = false;
 	var key;
 		
 	$('.keyboard .key').click(function(){
 	
 		key = $(this).find('span').text();
 
-		if( key == '⌫' ||  key == '' ){
+		
+        
+		if( key == '⌫' || key == 'Caps Lock'  ||  key == '' ){
 		
 			if( key == '⌫' ){
 				$('#result').val( $('#result').val().substr(0, $('#result').val().length - 1) ).focus();
 			}
-
+              
+            if( key == 'Caps Lock' ){
+			
+				if(capslock){
+					$('.capslock').css('color','#000');
+					capslock = false;
+				}else{
+					$('.capslock').css('color','#ffffff');
+					capslock = true;
+				}	
+			}
+			  
 		
 			if( key == '' ){
 				$('#result').val( $('#result').val() + ' ' ).focus();
 			}
 			
 		}else{
+			if(capslock) key = key.toUpperCase();		
 			$('#result').val( $('#result').val() + key ).focus(); 
-		}	
+		};
 	});
 });
+
+var btn = document.getElementById('capsBtn');
+var down = document.getElementsByClassName('downCase');
+btn.onclick = function() {
+	
+  var engKeyboard = document.getElementById('english');
+
+    if(engKeyboard.classList.contains('english-upper')){
+        engKeyboard.classList.remove('english-upper');
+    }else {
+        engKeyboard.classList.add('english-upper');
+    }
+}
+
+
+
+
+
+
+var input = document.getElementById('result');
+var englishKey = document.getElementById('english');
+var englishBtn = document.getElementById("englishBtn");
+englishBtn.onclick = function() {
+  englishKey.style.display = "block";
+  input.style.direction = "ltr";
+
+  hebrewKey.style.display = "none";
+  arabicKey.style.display = "none";
+}
+
+
+
+var hebrewKey = document.getElementById('hebrew');
+var hebrewBtn = document.getElementById("hebrewBtn");
+hebrewBtn.onclick = function() {
+  hebrewKey.style.display = "block";
+  input.style.direction = "rtl";
+
+  englishKey.style.display = "none";
+  arabicKey.style.display = "none";
+}
+
+
+
+var arabicKey = document.getElementById('arabic');
+var arabicBtn = document.getElementById("arabicBtn");
+arabicBtn.onclick = function() {
+  arabicKey.style.display = "block";
+  input.style.direction = "rtl";
+
+  hebrewKey.style.display = "none";
+  englishKey.style.display = "none";
+}
+
 </script>
 </body>
 </html>

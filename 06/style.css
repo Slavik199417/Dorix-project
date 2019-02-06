@@ -48,32 +48,41 @@ body {
 	align-items: center;
 	font-size: 3vh;
 	font-weight: bold;
-	margin: 2vh auto;
+	margin: 4vh auto;
 }
 
 .text {
-	width: 80%;
+	width: 90%;
 	height: 5vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 3vh;
 	font-weight: bold;
-	margin: 2vh auto;
+	margin: 4vh auto;
 }
 
 
 .keyboard{
     width: 100%;
-    height: 47vh;
+    height: 36vh;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
     background-color: #dce0e3;
     font-family: arial;
-    padding-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.keyboardInput {
+	direction: rtl;
+}
+
 .row{
     width: 100%;
     height: 8vh;
-    margin-top: 1vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,8 +93,8 @@ body {
 }
 
 .key{
-	width: 7vw;
-    height: 7vh;
+	width: 6.5vw;
+    height: 6vh;
     border-radius: 1vh;
     margin-left: 2vw;
     display: flex;
@@ -97,13 +106,31 @@ body {
     background-color: #fff;
 }
 
+
+.key:active {
+	background-color: gray;
+}
+
 .backspace {
-    width: 10vw;
+    width: 12vw;
     background-color: #c2c5ca;
 }
 
-.keyboard .space{
+.space {
     width: 50vw;
+}
+
+.capslock {
+    width: 15vw;
+    background-color: #c2c5ca;
+    line-height: 20px;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.shift {
+	width: 17vw;
+	background-color: #c2c5ca;
 }
 
 #result{
@@ -113,11 +140,50 @@ body {
     display: block;
     font-size: 3vh;
     color: #444;
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+}
 
+
+.english {
+	display: none;
+}
+
+.arabic {
+	display: none;
 }
 
 
 
+
+.language {
+    width: 95%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.language button {
+	width: 30%;
+	height: 6vh;
+    background-color: #939393;
+    border: 1vw solid #939393; 
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    font-family: arial;
+    outline: none;
+}
+
+.language button:active {
+	background-color: #c2c5ca;
+	border: 1vw solid #c2c5ca;
+}
 
 
 
@@ -142,3 +208,12 @@ body {
 	font-size: 4vh;
     font-weight: bold;
 }
+
+.upperCase {
+	display: none;
+}
+
+.english-upper .downCase {
+	text-transform: uppercase;
+}
+
